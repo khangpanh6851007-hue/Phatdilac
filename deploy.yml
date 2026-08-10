@@ -1,0 +1,42 @@
+name: Deploy Long Hoa Website to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+  # Cho phép kích hoạt thủ công từ tab Actions trên GitHub
+  workflow_dispatch:
+
+# Đặt quyền cho GITHUB_TOKEN để có thể deploy lên GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cho phép chỉ một tiến trình deploy chạy đồng thời
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Chỉ định thư mục chứa file index.html (thư mục gốc)
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
