@@ -1,26 +1,51 @@
-# 🌟 Đức Di Lặc & Chuyển Luân Thánh Vương (Long Hoa Vô Thượng)
+# Đức Di Lặc – Chuyển Luân Thánh Vương | Ultra 7.2
 
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML5-Web-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Mobile IDE](https://img.shields.io/badge/Acode%20%2F%20Trebedit-Optimized-success.svg)](https://github.com)
+Website tĩnh bằng HTML, CSS và JavaScript, có thể triển khai miễn phí bằng GitHub Pages.
 
-Dự án web tĩnh cao cấp lấy cảm hứng từ cảnh giới Long Hoa, lầu đài trân bảo dưới chân núi Cấm và triết lý hợp nhất giữa **Đức Phật Di Lặc** cùng **Chuyển Luân Thánh Vương**. Giao diện được tối ưu hóa siêu mượt mà để chạy trực tiếp trên các trình duyệt di động hoặc môi trường lập trình di động như **Acode** và **Trebedit**.
+## Nội dung chính
 
----
+- Giao diện chủ đề Đức Di Lặc – Chuyển Luân Thánh Vương, Long Hoa và Núi Cấm.
+- Khu vực tiện ích, trì tụng và các thành phần tương tác đã có trong bản Ultra.
+- Hệ thống mô phỏng Công đức và Phước đức từ 0 đến 9.000.000.000.000.
+- Danh sách 2.000 chức vị Hiền Đức được tạo tự động, kèm sức mạnh và phép thuật biểu tượng theo cấp.
+- Dữ liệu điểm được lưu trong LocalStorage của trình duyệt đang sử dụng.
 
-## 🚀 Các Tính Năng Nổi Bật (Phiên Bản 2026)
+> Lưu ý: Điểm số, chức vị, sức mạnh và phép thuật là nội dung mô phỏng trong website; không phải chứng nhận công đức thực tế, quyền năng siêu nhiên hay thẩm quyền tôn giáo.
 
-*   **✨ Hiệu Ứng Canvas Đa Tầng:** Hệ thống hạt ánh sáng vàng kim và mưa lá Bồ Đề chuyển động êm dịu, tạo không gian tịnh tâm.
-*   **💎 Giao Diện Glassmorphism 2026:** Thiết kế thẻ kính mờ kết hợp viền phản chiếu ánh sáng động, mang lại trải nghiệm thẩm mỹ cao cấp.
-*   **📿 Bộ Đếm Niệm Phật Kỹ Thuật Số:** Tích hợp tính năng ghi nhớ số lần trì tụng tự động thông qua `localStorage` trên trình duyệt.
-*   **🔔 Chuông Tịnh Web Audio API:** Trình tạo sóng âm thanh mô phỏng chuông mõ linh thiêng trực tiếp bằng mã nguồn mà không cần tệp âm thanh bên ngoài.
-*   **📱 Tối Ưu Mobile First:** Thiết kế đáp ứng hoàn hảo trên mọi kích thước màn hình điện thoại và máy tính bảng.
-
----
-
-## 📂 Cấu Trúc Thư Mục
+## Cấu trúc
 
 ```text
-├── index.html        # Tệp mã nguồn chính (HTML + CSS + JS)
-└── README.md         # Tài liệu giới thiệu dự án
+.
+├── index.html
+├── README.md
+└── .github/
+    └── workflows/
+        └── deploy.yml
+```
+
+## Chạy thử trên máy
+
+Mở `index.html` bằng trình duyệt hiện đại. Website sử dụng một số tài nguyên CDN như Google Fonts, Font Awesome và Supabase JS nên cần kết nối Internet để tải các tài nguyên đó.
+
+## Đưa website lên GitHub Pages
+
+1. Tạo một repository GitHub mới.
+2. Tải toàn bộ nội dung thư mục này lên repository, giữ nguyên đường dẫn `.github/workflows/deploy.yml`.
+3. Đảm bảo nhánh mặc định của repository là `main` (hoặc sửa tên nhánh trong `deploy.yml` nếu dùng nhánh khác).
+4. Mở **Settings → Pages**.
+5. Trong **Build and deployment → Source**, chọn **GitHub Actions**.
+6. Đẩy (push) commit lên nhánh `main`, hoặc chạy thủ công workflow **Deploy to GitHub Pages** trong tab **Actions**.
+7. Khi workflow chạy thành công, mở **Settings → Pages** hoặc phần Deployments để lấy địa chỉ website.
+
+Workflow dùng các action GitHub Pages chính thức: `actions/checkout`, `actions/configure-pages`, `actions/upload-pages-artifact` và `actions/deploy-pages`.
+
+## Dữ liệu và kết nối
+
+- Điểm công đức/phước đức hiện lưu cục bộ bằng LocalStorage; dữ liệu không tự đồng bộ giữa các thiết bị hoặc trình duyệt.
+- Phần kết nối phòng trực tuyến (nếu sử dụng) cần cấu hình dự án Supabase Realtime riêng.
+- Chỉ sử dụng Supabase **publishable/anon key** ở phía trình duyệt theo đúng chính sách bảo mật của Supabase. Tuyệt đối không đưa `service_role` key hoặc bí mật quản trị vào mã HTML công khai.
+- Không nhập thông tin cá nhân nhạy cảm vào các khu vực thử nghiệm.
+
+## Giấy phép
+
+Chưa chỉ định giấy phép phân phối. Nếu muốn người khác sử dụng, sửa đổi hoặc phân phối lại mã nguồn, hãy bổ sung tệp `LICENSE` phù hợp.

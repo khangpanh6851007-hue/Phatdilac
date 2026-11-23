@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đức Di Lặc - Chuyển Luân Thánh Vương v4.6.9.9</title>
+    <title>Đức Di Lặc - Chuyển Luân Thánh Vương Ultra 5.0</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
@@ -314,7 +314,120 @@
             .hero h1 { font-size: 2rem; }
             nav ul { display: none; }
         }
-    </style>
+    
+/* ===== ULTRA 5.0 enhancement layer ===== */
+:root{--gold-glow:rgba(243,198,83,.28);--panel:rgba(10,10,18,.88)}
+html{scroll-padding-top:90px} body{background-image:radial-gradient(ellipse at 50% 0%,rgba(91,61,13,.16),transparent 55%)}
+header{gap:14px} .logo{white-space:nowrap} nav{min-width:0} nav ul{flex-wrap:wrap;justify-content:center;gap:12px}
+nav ul li a{display:inline-block;padding:7px 9px;border-radius:18px}nav ul li a:hover{background:rgba(243,198,83,.12)}
+.hero{min-height:720px;background-attachment:fixed}.hero h1{max-width:1050px;line-height:1.2}
+.card,.showcase-box,.ultimate-box{background:linear-gradient(145deg,rgba(24,22,28,.92),rgba(7,7,13,.9));border-color:rgba(243,198,83,.32)}
+.card:focus-within,.card:hover,.showcase-box:hover{box-shadow:0 18px 55px rgba(243,198,83,.18)}
+.btn:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--light-gold);outline-offset:4px}
+#v5-extra{background:linear-gradient(180deg,rgba(5,5,10,.3),rgba(30,22,8,.22))}
+.v5-toolbar{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:0 auto 28px}
+.v5-chip{border:1px solid var(--border-glass);color:var(--light-gold);background:rgba(243,198,83,.09);padding:9px 15px;border-radius:24px;font:500 .85rem Montserrat;cursor:pointer}
+.v5-chip:hover{background:rgba(243,198,83,.2)}
+.v5-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.v5-feature{padding:24px;border:1px solid var(--border-glass);border-radius:17px;background:var(--panel);min-height:170px;transition:.3s}
+.v5-feature:hover{transform:translateY(-5px);border-color:var(--primary-gold)}.v5-feature .num{color:var(--primary-gold);font:700 1.2rem Cinzel}.v5-feature h3{color:var(--light-gold);font-size:1.05rem;margin:10px 0}.v5-feature p{color:var(--text-muted);font-size:.88rem}
+.v5-panel{max-width:900px;margin:28px auto 0;padding:28px;border:1px solid var(--border-glass);border-radius:18px;background:var(--panel)}
+.v5-panel h3{color:var(--primary-gold);margin-bottom:14px}.v5-input{width:100%;padding:13px 15px;border-radius:12px;border:1px solid var(--border-glass);background:#090910;color:white;font:inherit;margin:8px 0}
+.v5-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0}.v5-stat{padding:16px;border-radius:14px;background:rgba(243,198,83,.08);border:1px solid var(--border-glass)}.v5-stat strong{display:block;color:var(--primary-gold);font:700 1.5rem Cinzel}
+.v5-progress{height:10px;background:#292631;border-radius:20px;overflow:hidden}.v5-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#a87919,#fae199);transition:width .4s}
+#v5-toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:2000;background:#17130a;color:#fae199;border:1px solid var(--border-glass);padding:12px 18px;border-radius:24px;opacity:0;pointer-events:none;transition:.25s}#v5-toast.show{opacity:1}
+#mobile-menu{display:none}
+@media(max-width:900px){header{padding:12px 4%;flex-wrap:wrap}nav{order:3;width:100%;overflow-x:auto}nav ul{justify-content:flex-start;flex-wrap:nowrap;width:max-content}nav ul li a{font-size:.78rem}.audio-btn{margin-left:auto}.hero{background-attachment:scroll}}
+@media(max-width:600px){section{padding:75px 5%}.hero{min-height:650px}.hero h1{font-size:1.75rem}.hero p{font-size:.92rem}.showcase-box,.ultimate-box{padding:24px}.counter-display{font-size:2.6rem}.v5-panel{padding:20px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+
+/* ULTRA 5.1 feature suite */
+#v51-suite{background:linear-gradient(180deg,rgba(7,6,12,.45),rgba(28,20,7,.3))}
+.v51-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.v51-card{background:var(--card-glass);border:1px solid var(--border-glass);border-radius:18px;padding:24px;box-shadow:0 12px 32px #0007}
+.v51-card h3{color:var(--light-gold);margin:8px 0 10px}.v51-card p,.v51-muted{color:var(--text-muted);font-size:.9rem}
+.v51-btn{border:1px solid var(--border-glass);background:linear-gradient(135deg,#f3c653,#a87919);color:#100d06;border-radius:22px;padding:10px 16px;margin:7px 5px 0 0;font-weight:700;cursor:pointer}
+.v51-btn.alt{background:rgba(243,198,83,.1);color:var(--light-gold)}
+.v51-result{padding:12px;margin-top:10px;border-radius:12px;background:rgba(243,198,83,.1);color:var(--light-gold);min-height:42px}
+.v51-map{height:300px;position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--border-glass);background:radial-gradient(ellipse at 50% 45%,#536447,#18291f 48%,#07100d 80%);perspective:700px}
+.v51-terrain{position:absolute;inset:15%;transform:rotateX(58deg) rotateZ(-12deg);border:2px solid #c6a85d;border-radius:45%;background:repeating-linear-gradient(25deg,transparent 0 24px,#d6bd6a33 25px 27px),repeating-linear-gradient(115deg,transparent 0 34px,#e5d39a22 35px 37px);box-shadow:0 0 55px #d9b64b55}
+.v51-peak{position:absolute;left:42%;top:24%;width:100px;height:100px;background:linear-gradient(135deg,#b8a16c,#344b35 55%,#14251c);clip-path:polygon(50% 0,100% 100%,0 100%);filter:drop-shadow(0 10px 12px #000)}
+.v51-pin{position:absolute;border:1px solid #ffe6a0;background:#221b0c;color:#ffe6a0;border-radius:18px;padding:6px 10px;font-size:.75rem;cursor:pointer;box-shadow:0 0 15px #f3c65366}
+.v51-pin.p1{left:44%;top:16%}.v51-pin.p2{left:12%;top:65%}.v51-pin.p3{right:9%;top:58%}
+.v51-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.v51-input{width:100%;background:#090910;color:white;border:1px solid var(--border-glass);padding:11px;border-radius:10px;margin:8px 0}
+.v51-quest{display:flex;align-items:center;gap:10px;padding:10px;border-bottom:1px solid #f3c65322;color:var(--text-main)}
+.v51-quest input{accent-color:#f3c653;width:18px;height:18px}
+body.v51-4k{font-size:18px}body.v51-4k .hero h1{font-size:clamp(3rem,5vw,5rem)}body.v51-4k section{padding-left:10%;padding-right:10%}
+@media(min-width:1600px){body.v51-auto{font-size:18px}body.v51-auto .hero h1{font-size:4rem}}
+@media(max-width:600px){.v51-card{padding:18px}.v51-map{height:240px}}
+
+
+/* ULTRA 5.2 – event and interactive world */
+.v52-hero{padding:42px 24px;border:1px solid var(--border-glass);border-radius:24px;text-align:center;background:radial-gradient(ellipse at top,rgba(243,198,83,.22),transparent 60%),linear-gradient(135deg,#15101d,#050509);box-shadow:0 18px 60px #0009;margin-bottom:28px}
+.v52-hero h3{font-size:clamp(1.7rem,4vw,3rem);color:var(--primary-gold);margin:8px}
+.v52-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.v52-card{background:var(--card-glass);border:1px solid var(--border-glass);border-radius:18px;padding:22px;min-width:0}
+.v52-card h3{color:var(--light-gold);margin:8px 0}.v52-card p{color:var(--text-muted);font-size:.9rem}
+.v52-btn{border:1px solid var(--border-glass);background:linear-gradient(135deg,#f3c653,#a87919);color:#100d06;border-radius:22px;padding:10px 16px;margin:6px 5px 0 0;font-weight:700;cursor:pointer}
+.v52-btn.alt{background:rgba(243,198,83,.1);color:var(--light-gold)}
+.v52-status{background:rgba(243,198,83,.1);border-radius:10px;padding:11px;color:var(--light-gold);margin-top:10px;min-height:40px;font-size:.88rem}
+.v52-field{width:100%;background:#090910;color:#fff;border:1px solid var(--border-glass);padding:11px;border-radius:10px;margin:7px 0}
+.v52-map{height:360px;position:relative;overflow:hidden;border:1px solid var(--border-glass);border-radius:16px;background:radial-gradient(ellipse at 50% 52%,#60734e,#263d30 48%,#08130e 85%);touch-action:pan-y}
+.v52-mapgrid{position:absolute;inset:-10%;transform:rotateX(57deg) rotateZ(-13deg) scale(1.2);background:repeating-linear-gradient(0deg,transparent 0 28px,#d8c17a25 29px 31px),repeating-linear-gradient(90deg,transparent 0 28px,#d8c17a25 29px 31px);border:2px solid #b99b55;border-radius:40%}
+.v52-mountain{position:absolute;left:35%;top:16%;width:34%;height:48%;background:linear-gradient(140deg,#b9a16b 0%,#64784e 35%,#243b2b 80%);clip-path:polygon(50% 0,64% 28%,78% 42%,100% 100%,0 100%,23% 40%,39% 25%);filter:drop-shadow(0 12px 12px #000b)}
+.v52-map-pin{position:absolute;z-index:2;border:1px solid #ffe7a3;background:#211a0b;color:#ffe7a3;border-radius:20px;padding:7px 10px;font-size:.75rem;cursor:pointer}
+.v52-map-pin.a{left:43%;top:14%}.v52-map-pin.b{left:8%;top:67%}.v52-map-pin.c{right:7%;top:58%}.v52-map-pin.d{left:58%;top:76%}
+.v52-map-tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.v52-table{width:100%;border-collapse:collapse;margin-top:8px}.v52-table td,.v52-table th{padding:9px 7px;border-bottom:1px solid #f3c6532a;text-align:left;font-size:.86rem}
+.v52-table th{color:var(--primary-gold)}
+.v52-rank{font-family:'Cinzel',serif;color:var(--primary-gold);font-weight:bold}
+.v52-event-banner{padding:22px;border-radius:18px;background:linear-gradient(110deg,#261b09,#090910 55%,#33230c);border:1px solid var(--border-glass);text-align:center}
+.v52-event-banner .symbol{font-size:2.8rem;color:var(--primary-gold)}
+.v52-progress{height:10px;background:#ffffff18;border-radius:20px;overflow:hidden;margin:10px 0}.v52-progress>span{display:block;height:100%;background:linear-gradient(90deg,#a87919,#ffe199);width:0}
+@media(max-width:600px){.v52-map{height:270px}.v52-card{padding:17px}}
+
+
+/* ULTRA 6.0 – 100 treasure levels and Long Hoa online-ready event hall */
+.v60-banner{padding:30px 22px;border:1px solid var(--border-glass);border-radius:22px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#b68b2c44,transparent 62%),linear-gradient(135deg,#17101d,#050509);margin-bottom:24px}
+.v60-banner h3{font-size:clamp(1.7rem,4vw,2.8rem);color:var(--primary-gold)}
+.v60-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.v60-card{background:var(--card-glass);border:1px solid var(--border-glass);border-radius:18px;padding:22px;min-width:0}
+.v60-card h3{color:var(--light-gold);margin:8px 0}
+.v60-muted{color:var(--text-muted);font-size:.88rem}
+.v60-progress{height:12px;border-radius:20px;background:#ffffff1c;overflow:hidden;margin:10px 0}
+.v60-progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,#9d6e13,#ffe6a0);transition:width .3s}
+.v60-btn{border:1px solid var(--border-glass);background:linear-gradient(135deg,#f3c653,#a87919);color:#100d06;border-radius:22px;padding:10px 15px;margin:5px 5px 0 0;font-weight:700;cursor:pointer}
+.v60-btn.alt{background:rgba(243,198,83,.1);color:var(--light-gold)}
+.v60-status{background:rgba(243,198,83,.1);border-radius:10px;padding:11px;color:var(--light-gold);margin-top:10px;min-height:40px;font-size:.88rem}
+.v60-field{width:100%;background:#090910;color:#fff;border:1px solid var(--border-glass);padding:11px;border-radius:10px;margin:7px 0}
+.v60-levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:6px;margin-top:14px;max-height:290px;overflow:auto;padding:3px}
+.v60-level{border:1px solid #f3c65355;border-radius:9px;text-align:center;padding:9px 2px;font-size:.78rem;color:#d5d0c2;background:#17151b}
+.v60-level.unlocked{background:linear-gradient(145deg,#b98b2d,#f4d987);color:#171006;font-weight:800}
+.v60-level.current{outline:2px solid #fff1b8;box-shadow:0 0 14px #f3c65388}
+.v60-chat{height:180px;overflow:auto;border:1px solid #f3c65333;border-radius:12px;padding:10px;background:#050509}
+.v60-chat p{font-size:.85rem;padding:5px 0;border-bottom:1px solid #ffffff12;overflow-wrap:anywhere}
+.v60-chat strong{color:var(--primary-gold)}
+@media(max-width:600px){.v60-card{padding:17px}.v60-levels{grid-template-columns:repeat(5,1fr)}}
+
+
+/* ULTRA 7.1 – virtue and merit rank pathway */
+.v71-card{background:var(--card-glass);border:1px solid var(--border-glass);border-radius:18px;padding:22px}
+.v71-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.v71-card h3{color:var(--light-gold);margin:8px 0}
+.v71-meter{height:10px;border-radius:20px;background:#ffffff1c;overflow:hidden;margin:6px 0 12px}
+.v71-meter span{display:block;height:100%;background:linear-gradient(90deg,#a87919,#ffe199);width:0}
+.v71-rank-list{display:grid;gap:8px;max-height:340px;overflow:auto;margin-top:12px}
+.v71-rank-row{padding:10px;border:1px solid #f3c65333;border-radius:10px;background:#0b0a10}
+.v71-rank-row.active{border-color:#f3c653;background:#4a371733}
+.v71-rank-row.unlocked{border-color:#b99b55}
+.v71-btn{border:1px solid var(--border-glass);background:linear-gradient(135deg,#f3c653,#a87919);color:#100d06;border-radius:22px;padding:10px 15px;margin:5px 5px 0 0;font-weight:700;cursor:pointer}
+.v71-btn.alt{background:rgba(243,198,83,.1);color:var(--light-gold)}
+.v71-status{background:rgba(243,198,83,.1);border-radius:10px;padding:11px;color:var(--light-gold);margin-top:10px;min-height:40px;font-size:.88rem}
+.v71-small{font-size:.85rem;color:var(--text-muted)}
+
+</style>
 </head>
 <body>
 
@@ -332,6 +445,12 @@
                 <li><a href="#hopnhat">Hợp Nhất</a></li>
                 <li><a href="#laudai">Lầu Đài Núi Cấm</a></li>
                 <li><a href="#tritung">Trì Tụng</a></li>
+                <li><a href="#v5-extra">Tiện Ích 5.0</a></li>
+                <li><a href="#v5-links">18 Tính Năng</a></li>
+                <li><a href="#v51-suite">Long Hoa Ultra</a></li>
+                <li><a href="#ultra52">Thiên Cung 5.2</a></li>
+                <li><a href="#ultra60">Ultra 6.0</a></li>
+                <li><a href="#ultra71">Phong Chức Long Hoa</a></li>
             </ul>
         </nav>
         <button class="audio-btn" onclick="toggleZenSound()"><i class="fa-solid fa-bell"></i> Chuông Tịnh</button>
@@ -339,7 +458,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-badge"><i class="fa-solid fa-star"></i> PHIÊN BẢN KỸ THUẬT 4.6.9.9</div>
+        <div class="hero-badge"><i class="fa-solid fa-star"></i> PHIÊN BẢN ULTRA 5.0 – FULL HD</div>
         <h1>Đức Di Lặc & Chuyển Luân Thánh Vương</h1>
         <p>Hội tụ năng lượng tâm linh từ non thiêng Núi Cấm, mở ra kỷ nguyên đại đồng vĩnh hằng và an lạc.</p>
         <a href="#hopnhat" class="btn">Khám Phá Ngay</a>
@@ -410,6 +529,350 @@
             <br>
             <button style="background: transparent; border: 1px solid var(--border-glass); color: var(--text-muted); padding: 8px 20px; border-radius: 20px; margin-top: 15px; cursor: pointer;" onclick="resetCount()">Làm Mới Số Đếm</button>
         </div>
+    </section>
+
+
+    <!-- ULTRA 5.0: mở rộng tính năng, giữ nguyên các khu vực gốc -->
+    <section id="v5-extra">
+      <div class="section-title"><h2>Trung Tâm Trải Nghiệm Ultra 5.0</h2><p>Nâng cấp giao diện, tiện ích và theo dõi hành trình trì tụng</p></div>
+      <div class="v5-toolbar">
+        <button class="v5-chip" onclick="v5SetTheme()"><i class="fa-solid fa-palette"></i> Đổi ánh sáng</button>
+        <button class="v5-chip" onclick="v5ToggleFocus()"><i class="fa-solid fa-moon"></i> Chế độ tĩnh tâm</button>
+        <button class="v5-chip" onclick="v5Share()"><i class="fa-solid fa-share-nodes"></i> Chia sẻ trang</button>
+        <button class="v5-chip" onclick="window.print()"><i class="fa-solid fa-print"></i> In / lưu PDF</button>
+      </div>
+      <div class="v5-grid">
+        <article class="v5-feature"><div class="num">01</div><h3>Nhật ký công phu</h3><p>Lưu ghi chú và ngày thực hành ngay trên thiết bị.</p><button class="v5-chip" onclick="document.getElementById('v5-journal').focus()">Mở ghi chú</button></article>
+        <article class="v5-feature"><div class="num">02</div><h3>Mục tiêu trì tụng</h3><p>Đặt mục tiêu số câu niệm và theo dõi tiến độ.</p><button class="v5-chip" onclick="v5SetGoal()">Đặt mục tiêu</button></article>
+        <article class="v5-feature"><div class="num">03</div><h3>Nhắc nhở nhẹ nhàng</h3><p>Tạo nhắc nhở tại thiết bị bằng thông báo của trình duyệt.</p><button class="v5-chip" onclick="v5Notify()">Bật thông báo</button></article>
+        <article class="v5-feature"><div class="num">04</div><h3>Chế độ tập trung</h3><p>Giảm xao nhãng, làm nổi bật nội dung đang đọc.</p><button class="v5-chip" onclick="v5ToggleFocus()">Bật / tắt</button></article>
+        <article class="v5-feature"><div class="num">05</div><h3>Chia sẻ thành tựu</h3><p>Chia sẻ số câu niệm hiện tại qua chức năng chia sẻ thiết bị.</p><button class="v5-chip" onclick="v5Share()">Chia sẻ</button></article>
+        <article class="v5-feature"><div class="num">06</div><h3>Lưu bản in</h3><p>In trang hoặc lưu thành PDF từ trình duyệt.</p><button class="v5-chip" onclick="window.print()">Lưu PDF</button></article>
+      </div>
+      <div class="v5-panel">
+        <h3><i class="fa-solid fa-chart-line"></i> Bảng thành tựu Trì Tụng 5.0</h3>
+        <div class="v5-stats"><div class="v5-stat"><span>Tổng số câu</span><strong id="v5-total">0</strong></div><div class="v5-stat"><span>Mục tiêu</span><strong id="v5-goal">108</strong></div><div class="v5-stat"><span>Hoàn thành</span><strong id="v5-percent">0%</strong></div></div>
+        <div class="v5-progress"><span id="v5-progress-bar"></span></div>
+        <p style="color:var(--text-muted);margin-top:12px;font-size:.85rem">Dữ liệu lưu cục bộ trên trình duyệt này (LocalStorage), không tự đồng bộ giữa các thiết bị.</p>
+      </div>
+      <div class="v5-panel">
+        <h3><i class="fa-solid fa-book-open"></i> Nhật ký tĩnh tâm</h3>
+        <textarea id="v5-journal" class="v5-input" rows="4" placeholder="Ghi lại lời nguyện, cảm nhận hoặc nội dung cần ghi nhớ..."></textarea>
+        <button class="btn" onclick="v5SaveJournal()">Lưu nhật ký</button>
+        <span id="v5-journal-status" style="color:var(--text-muted);margin-left:12px;font-size:.85rem"></span>
+      </div>
+    </section>
+    <section id="v5-links">
+      <div class="section-title"><h2>18 Lối Tắt Tính Năng Ultra</h2><p>Các liên kết điều hướng nhanh đến những khu vực và tiện ích của website</p></div>
+      <div class="v5-grid">
+        <a class="v5-feature" href="#home"><div class="num">01</div><h3>Trang chủ</h3><p>Trở về màn hình mở đầu.</p></a>
+        <a class="v5-feature" href="#hopnhat"><div class="num">02</div><h3>Tôn danh hợp nhất</h3><p>Khám phá nội dung tôn danh.</p></a>
+        <a class="v5-feature" href="#laudai"><div class="num">03</div><h3>Lầu đài Núi Cấm</h3><p>Đến khu vực lầu đài trân bảo.</p></a>
+        <a class="v5-feature" href="#tritung"><div class="num">04</div><h3>Góc trì tụng</h3><p>Mở bộ đếm niệm Phật.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">05</div><h3>Trung tâm 5.0</h3><p>Mở các tiện ích nâng cấp.</p></a>
+        <a class="v5-feature" href="#v5-journal"><div class="num">06</div><h3>Nhật ký</h3><p>Ghi lại hành trình tu tập.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">07</div><h3>Thống kê</h3><p>Xem tổng số câu niệm.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">08</div><h3>Mục tiêu</h3><p>Thiết lập mục tiêu công phu.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">09</div><h3>Tiến độ</h3><p>Theo dõi tỷ lệ hoàn thành.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">10</div><h3>Đổi ánh sáng</h3><p>Chuyển hiệu ứng ánh sáng vàng.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">11</div><h3>Tĩnh tâm</h3><p>Bật chế độ tập trung.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">12</div><h3>Chuông tịnh</h3><p>Phát âm thanh chuông.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">13</div><h3>Thông báo</h3><p>Quản lý quyền nhắc nhở.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">14</div><h3>Chia sẻ</h3><p>Chia sẻ thành tựu.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">15</div><h3>In / PDF</h3><p>Lưu trang để xem ngoại tuyến.</p></a>
+        <a class="v5-feature" href="#v5-extra"><div class="num">16</div><h3>Ghi chú</h3><p>Lưu nội dung cá nhân trên máy.</p></a>
+        <a class="v5-feature" href="#home"><div class="num">17</div><h3>Đầu trang</h3><p>Quay lại phần đầu website.</p></a>
+        <a class="v5-feature" href="#v5-links"><div class="num">18</div><h3>Danh mục tiện ích</h3><p>Xem toàn bộ lối tắt.</p></a>
+      </div>
+    </section>
+    <div id="v5-toast" role="status" aria-live="polite"></div>
+
+
+    <!-- ULTRA 5.1: requested feature expansion; original sections remain intact -->
+    <section id="v51-suite">
+      <div class="section-title">
+        <h2>Long Hoa Ultra – Trung Tâm Tính Năng Mở Rộng</h2>
+        <p>Kho báu, Đại Hội Long Hoa, bản đồ Núi Cấm, dữ liệu và nhiệm vụ</p>
+      </div>
+      <div class="v51-grid">
+        <article class="v51-card">
+          <i class="fa-solid fa-gem"></i><h3>Kho Báu Phép Thuật</h3>
+          <p>Mở rương nhận vật phẩm biểu trưng ngẫu nhiên. Kết quả được lưu trên thiết bị.</p>
+          <button class="v51-btn" onclick="v51OpenTreasure()">Mở kho báu</button>
+          <div class="v51-result" id="v51-treasure-result" aria-live="polite">Rương báu đang chờ khai mở.</div>
+          <p class="v51-muted" id="v51-inventory">Bộ sưu tập: 0 vật phẩm</p>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-vihara"></i><h3>Đại Hội Long Hoa</h3>
+          <p>Khu vực sự kiện mô phỏng với lịch trình và tiến độ tham gia do bạn tự đánh dấu.</p>
+          <div class="v51-result"><strong>Chủ đề:</strong> Hội tụ – Từ bi – An lạc<br><strong>Trạng thái:</strong> Không phải sự kiện trực tiếp</div>
+          <button class="v51-btn alt" onclick="v51EventStep()">Ghi nhận tham gia</button>
+          <p class="v51-muted" id="v51-event-count">Lượt ghi nhận: 0</p>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-mountain-sun"></i><h3>Bản Đồ Núi Cấm 3D</h3>
+          <p>Mô hình minh họa địa hình 3D đơn giản; chọn điểm để xem chú thích.</p>
+          <div class="v51-map" role="img" aria-label="Bản đồ minh họa Núi Cấm dạng địa hình 3D">
+            <div class="v51-terrain"></div><div class="v51-peak"></div>
+            <button class="v51-pin p1" onclick="v51MapInfo('Đỉnh núi – điểm cao minh họa')">Đỉnh núi</button>
+            <button class="v51-pin p2" onclick="v51MapInfo('Khu tham quan – vị trí minh họa')">Khu tham quan</button>
+            <button class="v51-pin p3" onclick="v51MapInfo('Lầu đài – vị trí giả lập')">Lầu đài</button>
+          </div>
+          <div class="v51-result" id="v51-map-info">Chọn một điểm trên bản đồ.</div>
+          <p class="v51-muted">Bản đồ minh họa, không dùng để dẫn đường thực tế.</p>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-bell"></i><h3>Âm Thanh Chuông Mõ Nâng Cao</h3>
+          <p>Tạo tiếng chuông trầm và tiếng mõ bằng Web Audio ngay trên trình duyệt.</p>
+          <button class="v51-btn" onclick="v51PlaySound('bell')">🔔 Chuông</button>
+          <button class="v51-btn alt" onclick="v51PlaySound('wood')">Mõ</button>
+          <button class="v51-btn alt" onclick="v51PlaySound('sequence')">Chuông + mõ</button>
+          <div class="v51-result" id="v51-audio-status">Chạm nút để phát âm thanh.</div>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-cloud-arrow-up"></i><h3>Đồng Bộ Dữ Liệu Tài Khoản</h3>
+          <p>Bản hiện tại lưu dữ liệu cục bộ trên thiết bị. Đồng bộ nhiều máy cần máy chủ và đăng nhập an toàn.</p>
+          <input id="v51-account" class="v51-input" placeholder="Tên hồ sơ trên thiết bị" maxlength="40">
+          <button class="v51-btn" onclick="v51SaveProfile()">Lưu hồ sơ cục bộ</button>
+          <div class="v51-result" id="v51-account-status">Chưa kết nối máy chủ.</div>
+          <p class="v51-muted">Không nhập mật khẩu hoặc thông tin nhạy cảm vào bản demo này.</p>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-box-archive"></i><h3>Sao Lưu & Khôi Phục</h3>
+          <p>Tải xuống bản sao dữ liệu trình duyệt hoặc chọn tệp JSON để khôi phục.</p>
+          <button class="v51-btn" onclick="v51Backup()">Tải bản sao lưu</button>
+          <label class="v51-btn alt" for="v51-restore-file">Chọn tệp khôi phục</label>
+          <input id="v51-restore-file" type="file" accept="application/json,.json" style="display:none" onchange="v51Restore(event)">
+          <div class="v51-result" id="v51-backup-status">Bản sao lưu gồm dữ liệu Long Hoa được lưu trong trình duyệt.</div>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-list-check"></i><h3>Nhiệm Vụ Hằng Ngày</h3>
+          <p>Đánh dấu các mục tiêu cá nhân. Nhiệm vụ tự làm mới theo ngày trên thiết bị.</p>
+          <div id="v51-quests">
+            <label class="v51-quest"><input type="checkbox" data-quest="1"> Trì tụng theo thời khóa</label>
+            <label class="v51-quest"><input type="checkbox" data-quest="2"> Dành thời gian tĩnh tâm</label>
+            <label class="v51-quest"><input type="checkbox" data-quest="3"> Ghi nhật ký biết ơn</label>
+            <label class="v51-quest"><input type="checkbox" data-quest="4"> Làm một việc thiện</label>
+          </div>
+          <div class="v51-result" id="v51-quest-status">Hoàn thành 0/4 nhiệm vụ hôm nay.</div>
+        </article>
+        <article class="v51-card">
+          <i class="fa-solid fa-display"></i><h3>Giao Diện Full HD & 4K</h3>
+          <p>Tối ưu co giãn theo màn hình; chế độ 4K tăng kích thước trình bày trên màn hình lớn.</p>
+          <button class="v51-btn" onclick="v51SetDisplay('auto')">Tự động</button>
+          <button class="v51-btn alt" onclick="v51SetDisplay('4k')">Chế độ 4K</button>
+          <div class="v51-result" id="v51-display-status">Đang dùng bố cục tự động thích ứng.</div>
+          <p class="v51-muted">Độ phân giải thực tế phụ thuộc màn hình và thiết bị.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ULTRA 5.2: expanded interactive features -->
+    <section id="ultra52">
+      <div class="section-title">
+        <h2>Thiên Cung Long Hoa – Ultra 5.2</h2>
+        <p>Thế giới tương tác, kho báu đa tầng, công đức và sự kiện cộng đồng</p>
+      </div>
+      <div class="v52-hero">
+        <div style="font-size:2.5rem;color:var(--primary-gold)">✧ ✦ ✧</div>
+        <h3>ĐẠI HỘI LONG HOA</h3>
+        <p>Không gian sự kiện mô phỏng – cùng hướng đến từ bi, trí tuệ và an lạc</p>
+        <div class="v52-progress"><span id="v52-event-progress"></span></div>
+        <p id="v52-event-progress-label">Tiến độ cộng đồng: 0 điểm</p>
+        <button class="v52-btn" onclick="v52EventAction('attend')">Tham gia sự kiện</button>
+        <button class="v52-btn alt" onclick="v52EventAction('kindness')">Ghi nhận việc thiện</button>
+        <button class="v52-btn alt" onclick="v52EventAction('meditate')">Ghi nhận tĩnh tâm</button>
+      </div>
+      <div class="v52-grid">
+        <article class="v52-card">
+          <i class="fa-solid fa-mountain-sun" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Bản Đồ Núi Cấm 3D Tương Tác</h3>
+          <p>Mô hình địa hình giả lập có điểm đánh dấu, phóng to/thu nhỏ và xoay góc nhìn.</p>
+          <div class="v52-map" id="v52-map">
+            <div class="v52-mapgrid"></div><div class="v52-mountain"></div>
+            <button class="v52-map-pin a" onclick="v52MapPoint('Đỉnh núi – điểm tham chiếu minh họa')">Đỉnh núi</button>
+            <button class="v52-map-pin b" onclick="v52MapPoint('Khu tham quan – điểm tham chiếu minh họa')">Khu tham quan</button>
+            <button class="v52-map-pin c" onclick="v52MapPoint('Lầu đài – vị trí giả lập')">Lầu đài</button>
+            <button class="v52-map-pin d" onclick="v52MapPoint('Hồ nước – vị trí giả lập')">Hồ nước</button>
+          </div>
+          <div class="v52-map-tools">
+            <button class="v52-btn alt" onclick="v52MapZoom(1.12)">Phóng to +</button>
+            <button class="v52-btn alt" onclick="v52MapZoom(.89)">Thu nhỏ −</button>
+            <button class="v52-btn alt" onclick="v52MapRotate()">Xoay góc</button>
+            <button class="v52-btn alt" onclick="v52MapReset()">Đặt lại</button>
+          </div>
+          <div class="v52-status" id="v52-map-status">Chọn một địa điểm trên bản đồ.</div>
+          <p style="margin-top:8px">Bản đồ minh họa, không phải bản đồ khảo sát hoặc chỉ đường thực tế.</p>
+        </article>
+        <article class="v52-card">
+          <i class="fa-solid fa-gem" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Kho Báu Nhiều Cấp Độ</h3>
+          <p>Chọn rương để mở vật phẩm sưu tầm. Đây là trò chơi mô phỏng, không có giao dịch hay giá trị tiền tệ.</p>
+          <div class="v52-map-tools">
+            <button class="v52-btn" onclick="v52OpenChest('Đồng')">Rương Đồng</button>
+            <button class="v52-btn" onclick="v52OpenChest('Bạc')">Rương Bạc</button>
+            <button class="v52-btn" onclick="v52OpenChest('Vàng')">Rương Vàng</button>
+            <button class="v52-btn" onclick="v52OpenChest('Kim Cương')">Rương Kim Cương</button>
+          </div>
+          <div class="v52-status" id="v52-chest-result">Chưa mở rương nào.</div>
+          <p id="v52-chest-count">Vật phẩm đã sưu tầm: 0</p>
+          <div id="v52-collection" class="v52-status">Bộ sưu tập sẽ hiển thị tại đây.</div>
+        </article>
+        <article class="v52-card">
+          <i class="fa-solid fa-ranking-star" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Bảng Xếp Hạng Công Đức</h3>
+          <p>Bảng xếp hạng cục bộ trên thiết bị này. Điểm là dữ liệu trò chơi tự ghi nhận, không phải đánh giá đạo đức.</p>
+          <input class="v52-field" id="v52-player-name" maxlength="24" placeholder="Tên hiển thị của bạn">
+          <button class="v52-btn" onclick="v52SaveScore()">Cập nhật hồ sơ điểm</button>
+          <table class="v52-table"><thead><tr><th>Hạng</th><th>Người chơi</th><th>Điểm</th></tr></thead><tbody id="v52-leaderboard"></tbody></table>
+          <div class="v52-status" id="v52-rank-status">Bảng xếp hạng trên thiết bị.</div>
+        </article>
+        <article class="v52-card">
+          <i class="fa-solid fa-user-shield" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Hệ Thống Tài Khoản Trực Tuyến</h3>
+          <p>Giao diện hồ sơ và đăng nhập mẫu. Để hoạt động trực tuyến thật cần cấu hình dịch vụ xác thực, máy chủ và chính sách bảo mật.</p>
+          <input class="v52-field" id="v52-email" type="email" autocomplete="email" placeholder="Email tài khoản">
+          <input class="v52-field" id="v52-display-name" maxlength="32" placeholder="Tên hiển thị">
+          <button class="v52-btn" onclick="v52CreateLocalAccount()">Tạo hồ sơ thử nghiệm</button>
+          <button class="v52-btn alt" onclick="v52Logout()">Đăng xuất hồ sơ mẫu</button>
+          <div class="v52-status" id="v52-account-state">Chưa đăng nhập. Chế độ hiện tại: ngoại tuyến.</div>
+          <p style="margin-top:8px">Không nhập mật khẩu thật. Bản này chưa kết nối nhà cung cấp đăng nhập.</p>
+        </article>
+        <article class="v52-card">
+          <i class="fa-solid fa-cloud-arrow-up" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Đồng Bộ Nhiều Thiết Bị</h3>
+          <p>Chuẩn bị gói dữ liệu để chuyển giữa các thiết bị. Đồng bộ nền tự động cần backend và xác thực người dùng.</p>
+          <button class="v52-btn" onclick="v52ExportSync()">Xuất gói đồng bộ</button>
+          <label class="v52-btn alt" for="v52-import-sync">Nhập gói đồng bộ</label>
+          <input id="v52-import-sync" type="file" accept=".json,application/json" style="display:none" onchange="v52ImportSync(event)">
+          <div class="v52-status" id="v52-sync-state">Chưa kết nối máy chủ đồng bộ. Dùng xuất/nhập để chuyển dữ liệu thủ công.</div>
+        </article>
+        <article class="v52-card">
+          <i class="fa-solid fa-calendar-days" style="color:var(--primary-gold);font-size:1.8rem"></i>
+          <h3>Đại Hội Long Hoa – Lịch Trình</h3>
+          <p>Lịch hoạt động minh họa để người quản trị tự cập nhật ngày giờ và nội dung sự kiện.</p>
+          <div class="v52-event-banner">
+            <div class="symbol">☸</div>
+            <h3>HỘI TỤ TÂM AN</h3>
+            <p>Trí tuệ • Từ bi • Hòa hợp</p>
+            <p class="v52-status">Sự kiện mô phỏng – chưa phải lịch tổ chức chính thức</p>
+          </div>
+          <div class="v52-status" id="v52-event-log">Chưa có hoạt động được ghi nhận.</div>
+          <p style="margin-top:8px">Điểm hoạt động: <strong id="v52-event-score">0</strong></p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ULTRA 6.0: 100 treasure levels and online event hall -->
+    <section id="ultra60">
+      <div class="section-title">
+        <h2>Thiên Cung Long Hoa – Ultra 6.0</h2>
+        <p>Hành trình 1.000 cấp kho báu và Đại Hội Long Hoa nhiều người tham gia</p>
+      </div>
+      <div class="v60-banner">
+        <div style="font-size:2.6rem;color:var(--primary-gold)">☸ ✧ 👑 ✧ ☸</div>
+        <h3>ĐẠI HỘI LONG HOA</h3>
+        <p class="v60-muted">Không gian hội tụ trực tuyến – giao lưu, hoạt động và cùng hướng thiện</p>
+        <div class="v60-status" id="v60-event-status">Sảnh sự kiện sẵn sàng. Cấu hình máy chủ, sau đó tạo phòng hoặc tham gia bằng mã.</div>
+      </div>
+      <div class="v60-grid">
+        <article class="v60-card">
+          <i class="fa-solid fa-chest" style="font-size:1.8rem;color:var(--primary-gold)"></i>
+          <h3>Kho Báu 1.000 Cấp</h3>
+          <p class="v60-muted">Tích lũy điểm trải nghiệm mô phỏng để mở khóa từng cấp. Cấp 1 đến 1.000 được lưu trên thiết bị.</p>
+          <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">
+            <strong id="v60-level-label">Cấp 1 / 1.000</strong>
+            <span id="v60-xp-label" class="v60-muted">0 XP</span>
+          </div>
+          <div class="v60-progress"><span id="v60-xp-bar"></span></div>
+          <div class="v60-status" id="v60-reward">Phần thưởng cấp tiếp theo đang chờ mở khóa.</div>
+          <button class="v60-btn" onclick="v60Earn('daily')">Nhận 10 XP</button>
+          <button class="v60-btn alt" onclick="v60Earn('activity')">Hoạt động +25 XP</button>
+          <button class="v60-btn alt" onclick="v60Claim()">Nhận thưởng cấp</button>
+          <div class="v60-levels" id="v60-level-grid" aria-label="Danh sách 1.000 cấp kho báu"></div>
+        </article>
+        <article class="v60-card">
+          <i class="fa-solid fa-trophy" style="font-size:1.8rem;color:var(--primary-gold)"></i>
+          <h3>Danh Sách Phần Thưởng 1.000 Cấp</h3>
+          <p class="v60-muted">Mỗi cấp có tên vật phẩm sưu tầm riêng; phần thưởng là vật phẩm trò chơi, không có giá trị tiền tệ.</p>
+          <div class="v60-status" id="v60-reward-list">Đang tải danh sách phần thưởng…</div>
+          <button class="v60-btn alt" onclick="v60ShowRewards()">Xem các mốc 10 cấp</button>
+        </article>
+        <article class="v60-card">
+          <i class="fa-solid fa-tower-broadcast" style="font-size:1.8rem;color:var(--primary-gold)"></i>
+          <h3>Đại Hội Long Hoa Trực Tuyến</h3>
+          <p class="v60-muted">Kết nối nhiều thiết bị qua Supabase Realtime. Cần tạo dự án Supabase và nhập URL cùng anon key.</p>
+          <details style="margin:10px 0">
+            <summary style="color:var(--primary-gold);cursor:pointer">Cấu hình máy chủ Supabase</summary>
+            <p class="v60-muted" style="margin:8px 0">Tạo dự án Supabase, bật Realtime, rồi nhập Project URL và anon/public key. Không dùng service_role key ở trình duyệt.</p>
+            <input class="v60-field" id="v60-supabase-url" placeholder="https://your-project.supabase.co" autocomplete="url">
+            <input class="v60-field" id="v60-supabase-key" placeholder="Supabase anon / publishable key" autocomplete="off">
+            <button class="v60-btn alt" onclick="v60SaveServerConfig()">Lưu cấu hình máy chủ</button>
+            <button class="v60-btn" onclick="v60ConnectServer()">Kết nối máy chủ</button>
+            <div class="v60-status" id="v60-server-status">Chưa cấu hình máy chủ.</div>
+          </details>
+          <input class="v60-field" id="v60-display" maxlength="24" placeholder="Tên hiển thị trong sự kiện">
+          <input class="v60-field" id="v60-room-code" maxlength="12" placeholder="Mã phòng (ví dụ LONGHOA26)">
+          <button class="v60-btn" onclick="v60CreateRoom()">Tạo phòng</button>
+          <button class="v60-btn alt" onclick="v60JoinRoom()">Tham gia phòng</button>
+          <div class="v60-status" id="v60-room-status">Chưa tham gia phòng nào.</div>
+          <div class="v60-status"><strong>Mã phòng:</strong> <span id="v60-room-current">—</span></div>
+          <div class="v60-status"><strong>Người đang online:</strong> <span id="v60-online-count">0</span><div id="v60-online-list" class="v60-muted">Chưa có thành viên.</div></div>
+          <p class="v60-muted" style="margin-top:8px">Khi kết nối máy chủ thành công, thành viên trong cùng mã phòng sẽ thấy nhau và chat theo thời gian thực. Mã phòng là kênh công khai: không chia sẻ thông tin riêng tư.</p>
+        </article>
+        <article class="v60-card">
+          <i class="fa-solid fa-comments" style="font-size:1.8rem;color:var(--primary-gold)"></i>
+          <h3>Bảng Tin & Trò Chuyện Sự Kiện</h3>
+          <p class="v60-muted">Ghi lời chào và thông báo vào nhật ký cục bộ của phòng hiện tại.</p>
+          <div class="v60-chat" id="v60-chat" aria-live="polite"></div>
+          <input class="v60-field" id="v60-chat-input" maxlength="180" placeholder="Viết lời nhắn…">
+          <button class="v60-btn" onclick="v60SendMessage()">Gửi lời nhắn</button>
+          <button class="v60-btn alt" onclick="v60ClearChat()">Xóa nhật ký</button>
+          <div class="v60-status" id="v60-chat-status">Tin nhắn được gửi qua máy chủ khi đã kết nối; nếu ngoại tuyến, lưu cục bộ.</div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ULTRA 7.1: Long Hoa merit and virtue rank ceremony -->
+    <section id="ultra71">
+      <div class="section-title">
+        <h2>Đại Hội Long Hoa – Phong Chức Vị Thiện Đức</h2>
+        <p>Lộ trình chức vị từ thấp đến cao theo điểm Công Đức và Phước Đức</p>
+      </div>
+      <div class="v71-card" style="margin-bottom:18px;text-align:center;background:radial-gradient(ellipse at top,rgba(243,198,83,.2),transparent 65%),var(--card-glass)">
+        <div style="font-size:2.4rem;color:var(--primary-gold)">☸ 👑 ☸</div>
+        <h3 style="font-size:1.7rem">LỄ PHONG CHỨC LONG HOA</h3>
+        <p class="v71-small">Hệ thống danh hiệu mô phỏng trong website. Điểm số do người tham gia tự ghi nhận, không phải sự chứng nhận phẩm hạnh hay thẩm quyền tôn giáo ngoài đời thực.</p>
+      </div>
+      <div class="v71-grid">
+        <article class="v71-card">
+          <h3><i class="fa-solid fa-scale-balanced" style="color:var(--primary-gold)"></i> Hồ Sơ Công Đức & Phước Đức</h3>
+          <p class="v71-small">Ghi nhận hoạt động thiện nguyện và tu dưỡng cá nhân theo quy ước của cộng đồng.</p>
+          <p><strong>Công Đức:</strong> <span id="v71-merit">0</span> điểm</p>
+          <div class="v71-meter"><span id="v71-merit-bar"></span></div>
+          <p><strong>Phước Đức:</strong> <span id="v71-blessing">0</span> điểm</p>
+          <div class="v71-meter"><span id="v71-blessing-bar"></span></div>
+          <button class="v71-btn" onclick="v71Add('merit',10)">Ghi nhận việc thiện +10</button>
+          <button class="v71-btn alt" onclick="v71Add('blessing',10)">Ghi nhận tu dưỡng +10</button>
+          <div class="v71-status" id="v71-score-status">Điểm được lưu trên thiết bị này.</div>
+        </article>
+        <article class="v71-card">
+          <h3><i class="fa-solid fa-certificate" style="color:var(--primary-gold)"></i> Chức Vị Hiện Tại</h3>
+          <div style="font-family:'Cinzel',serif;font-size:1.45rem;color:var(--primary-gold)" id="v71-current-rank">Thiện Tâm</div>
+          <p class="v71-small" id="v71-rank-description">Khởi đầu hành trình thiện lành.</p>
+          <div class="v71-status" id="v71-next-requirement">Điều kiện chức vị tiếp theo sẽ hiển thị tại đây.</div>
+          <button class="v71-btn" onclick="v71ApplyPromotion()">Xin cấp phép phong chức</button>
+          <div class="v71-status" id="v71-license-status">Chưa có yêu cầu phong chức mới.</div>
+        </article>
+        <article class="v71-card">
+          <h3><i class="fa-solid fa-list-ol" style="color:var(--primary-gold)"></i> Thứ Bậc Phong Chức</h3>
+          <p class="v71-small">Mỗi bậc yêu cầu đồng thời đủ Công Đức và Phước Đức. Hoàn thành từng bậc theo thứ tự.</p>
+          <div id="v71-rank-list" class="v71-rank-list"></div>
+        </article>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -517,5 +980,352 @@
             }
         }
     </script>
+
+<script>
+/* ULTRA 5.0: namespaced enhancements; original functions and content remain available. */
+(()=>{
+ const KEY='longhoa_v4699_count'; const GOAL='longhoa_v5_goal';
+ const $=id=>document.getElementById(id);
+ const read=()=>{const n=Number(localStorage.getItem(KEY));return Number.isFinite(n)&&n>0?Math.floor(n):0};
+ const goal=()=>Math.max(1,Number(localStorage.getItem(GOAL))||108);
+ function render(){const n=read(),g=goal(),pct=Math.min(100,Math.round(n/g*100));if($('count-display'))$('count-display').textContent=n.toLocaleString('vi-VN');if($('v5-total'))$('v5-total').textContent=n.toLocaleString('vi-VN');if($('v5-goal'))$('v5-goal').textContent=g.toLocaleString('vi-VN');if($('v5-percent'))$('v5-percent').textContent=pct+'%';if($('v5-progress-bar'))$('v5-progress-bar').style.width=pct+'%';}
+ window.incrementCount=function(){const n=read()+1;localStorage.setItem(KEY,String(n));render();toast('Đã ghi nhận một câu niệm');};
+ window.resetCount=function(){if(!confirm('Bạn có chắc muốn đặt lại bộ đếm?'))return;localStorage.setItem(KEY,'0');render();toast('Bộ đếm đã được đặt lại');};
+ function toast(s){const el=$('v5-toast');if(!el)return;el.textContent=s;el.classList.add('show');clearTimeout(window.__v5toast);window.__v5toast=setTimeout(()=>el.classList.remove('show'),2300);}
+ window.v5SetGoal=function(){const v=prompt('Nhập mục tiêu số câu niệm:',String(goal()));if(v===null)return;const n=Math.floor(Number(v));if(!Number.isFinite(n)||n<1){toast('Vui lòng nhập số lớn hơn 0');return;}localStorage.setItem(GOAL,String(n));render();toast('Đã cập nhật mục tiêu');};
+ window.v5SaveJournal=function(){localStorage.setItem('longhoa_v5_journal',$('v5-journal').value);$('v5-journal-status').textContent='Đã lưu trên thiết bị';toast('Nhật ký đã được lưu');};
+ window.v5SetTheme=function(){document.body.classList.toggle('v5-bright');let s=document.getElementById('v5-theme-style');if(!s){s=document.createElement('style');s.id='v5-theme-style';s.textContent='body.v5-bright{--dark-bg:#100d06;--card-glass:rgba(32,25,10,.9)}body.v5-bright .hero{filter:saturate(1.15) brightness(1.12)}';document.head.appendChild(s);}toast('Đã đổi ánh sáng giao diện');};
+ window.v5ToggleFocus=function(){document.body.classList.toggle('v5-focus');let s=document.getElementById('v5-focus-style');if(!s){s=document.createElement('style');s.id='v5-focus-style';s.textContent='body.v5-focus header,body.v5-focus footer{opacity:.22;transition:opacity .3s}body.v5-focus header:hover,body.v5-focus footer:hover{opacity:1}body.v5-focus .card{box-shadow:0 0 30px rgba(243,198,83,.12)}';document.head.appendChild(s);}toast('Đã chuyển chế độ tĩnh tâm');};
+ window.v5Share=async function(){const data={title:document.title,text:'Hành trình Long Hoa – Đức Di Lặc',url:location.href};try{if(navigator.share)await navigator.share(data);else if(navigator.clipboard){await navigator.clipboard.writeText(location.href);toast('Đã sao chép liên kết');}else toast('Trình duyệt chưa hỗ trợ chia sẻ');}catch(e){if(e.name!=='AbortError')toast('Không thể chia sẻ lúc này');}};
+ window.v5Notify=async function(){if(!('Notification'in window)){toast('Trình duyệt không hỗ trợ thông báo');return;}try{const p=await Notification.requestPermission();toast(p==='granted'?'Đã cấp quyền thông báo':'Chưa cấp quyền thông báo');}catch(e){toast('Không thể bật thông báo');}};
+ document.addEventListener('DOMContentLoaded',()=>{render();if($('v5-journal'))$('v5-journal').value=localStorage.getItem('longhoa_v5_journal')||'';});
+ render();
+})();
+</script>
+
+
+<script>
+/* ULTRA 5.1 interactive modules */
+(()=>{
+ const $=id=>document.getElementById(id), store=(k,v)=>localStorage.setItem('longhoa_v51_'+k,JSON.stringify(v));
+ const load=(k,d)=>{try{const v=JSON.parse(localStorage.getItem('longhoa_v51_'+k));return v??d}catch{return d}};
+ const toast=(id,msg)=>{if($(id))$(id).textContent=msg};
+ const items=['Ngọc Bồ Đề','Ấn Long Hoa','Hào Quang Kim Cương','Hoa Sen Vàng','Bảo Châu An Lạc'];
+ function renderInventory(){const a=load('treasures',[]);toast('v51-inventory','Bộ sưu tập: '+a.length+' vật phẩm');}
+ window.v51OpenTreasure=()=>{const a=load('treasures',[]),item=items[Math.floor(Math.random()*items.length)];a.push({name:item,date:new Date().toLocaleString('vi-VN')});store('treasures',a);toast('v51-treasure-result','Bạn nhận được: '+item+' ✨');renderInventory();};
+ let ev=load('eventCount',0);toast('v51-event-count','Lượt ghi nhận: '+ev);
+ window.v51EventStep=()=>{ev++;store('eventCount',ev);toast('v51-event-count','Lượt ghi nhận: '+ev);};
+ window.v51MapInfo=t=>toast('v51-map-info',t);
+ window.v51PlaySound=async type=>{try{const C=window.AudioContext||window.webkitAudioContext;if(!C)throw Error();const c=new C();await c.resume();
+   const tone=(f,d,wave='sine',vol=.22,delay=0)=>{const o=c.createOscillator(),g=c.createGain();o.type=wave;o.frequency.setValueAtTime(f,c.currentTime+delay);g.gain.setValueAtTime(.001,c.currentTime+delay);g.gain.exponentialRampToValueAtTime(vol,c.currentTime+delay+.025);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+delay+d);o.connect(g);g.connect(c.destination);o.start(c.currentTime+delay);o.stop(c.currentTime+delay+d+.03);};
+   if(type==='bell'||type==='sequence'){tone(520,2.4,'sine',.2);tone(780,1.8,'sine',.07,.02);}
+   if(type==='wood'||type==='sequence'){tone(185,.18,'triangle',.3,type==='sequence'?1.1:0);tone(145,.13,'triangle',.12,type==='sequence'?1.38:.2);}
+   toast('v51-audio-status','Đã phát âm thanh '+(type==='bell'?'chuông':type==='wood'?'mõ':'chuông và mõ')+'.');setTimeout(()=>c.close(),3200);
+  }catch(e){toast('v51-audio-status','Thiết bị hoặc trình duyệt không hỗ trợ Web Audio.');}};
+ window.v51SaveProfile=()=>{const n=$('v51-account').value.trim();if(!n){toast('v51-account-status','Vui lòng nhập tên hồ sơ.');return;}store('profile',{name:n,savedAt:new Date().toISOString()});toast('v51-account-status','Đã lưu hồ sơ “'+n+'” trên thiết bị này. Chưa đồng bộ máy chủ.');};
+ window.v51Backup=()=>{const data={format:'LongHoaBackup',version:'5.1',createdAt:new Date().toISOString(),localStorage:{}};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('longhoa_'))data.localStorage[k]=localStorage.getItem(k);}
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='long-hoa-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(url);toast('v51-backup-status','Đã tạo tệp sao lưu JSON.');};
+ window.v51Restore=e=>{const f=e.target.files&&e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(d.format!=='LongHoaBackup'||!d.localStorage||typeof d.localStorage!=='object')throw Error();if(!confirm('Khôi phục dữ liệu Long Hoa từ tệp này? Dữ liệu cùng khóa hiện tại sẽ được thay thế.'))return;Object.entries(d.localStorage).forEach(([k,v])=>{if(k.startsWith('longhoa_')&&typeof v==='string')localStorage.setItem(k,v);});toast('v51-backup-status','Khôi phục hoàn tất. Hãy tải lại trang để cập nhật toàn bộ.');}catch(err){toast('v51-backup-status','Tệp không hợp lệ hoặc không phải bản sao lưu Long Hoa.');}};r.readAsText(f);e.target.value='';};
+ const day=new Date().toLocaleDateString('en-CA');let q=load('quests',{date:day,done:[]});if(q.date!==day)q={date:day,done:[]};
+ const boxes=()=>document.querySelectorAll('#v51-quests input[type=checkbox]');
+ function renderQ(){boxes().forEach(b=>b.checked=q.done.includes(b.dataset.quest));toast('v51-quest-status','Hoàn thành '+q.done.length+'/4 nhiệm vụ hôm nay.');}
+ boxes().forEach(b=>b.addEventListener('change',()=>{q.done=b.checked?[...q.done,b.dataset.quest]:q.done.filter(x=>x!==b.dataset.quest);store('quests',q);renderQ();}));
+ window.v51SetDisplay=mode=>{document.body.classList.toggle('v51-4k',mode==='4k');store('display',mode);toast('v51-display-status',mode==='4k'?'Đã bật bố cục 4K thích ứng.':'Đã bật bố cục tự động Full HD / 4K.');};
+ const display=load('display','auto');if(display==='4k')document.body.classList.add('v51-4k');
+ renderInventory();renderQ();
+ const profile=load('profile',null);if(profile&&$('v51-account'))$('v51-account').value=profile.name;
+})();
+</script>
+
+
+<script>
+(()=>{
+ const $=id=>document.getElementById(id), P='longhoa_v52_';
+ const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(P+k))??d}catch{return d}};
+ const put=(k,v)=>localStorage.setItem(P+k,JSON.stringify(v));
+ const say=(id,t)=>{if($(id))$(id).textContent=t};
+ const treasureNames=['Ngọc Bồ Đề','Hoa Sen Tịnh Khiết','Ấn Long Hoa','Bảo Châu An Lạc','Hào Quang Kim Cương','Chuông Tâm An','Pháp Luân Vàng'];
+ const tiers={'Đồng':{chance:1,points:5},'Bạc':{chance:.78,points:12},'Vàng':{chance:.58,points:25},'Kim Cương':{chance:.34,points:50}};
+ window.v52OpenChest=tier=>{
+  const t=tiers[tier];if(!t)return;
+  const pool=treasureNames.filter((_,i)=>Math.random()<t.chance);const item=pool[Math.floor(Math.random()*pool.length)]||treasureNames[Math.floor(Math.random()*treasureNames.length)];
+  const bag=get('bag',[]);bag.push({tier,item,at:new Date().toLocaleString('vi-VN')});put('bag',bag);
+  let score=get('score',0)+t.points;put('score',score);
+  say('v52-chest-result','Mở rương '+tier+' thành công: '+item+' (+'+t.points+' điểm mô phỏng).');
+  say('v52-chest-count','Vật phẩm đã sưu tầm: '+bag.length);
+  say('v52-collection',bag.slice(-8).map(x=>x.item+' ['+x.tier+']').join(' • ')||'Chưa có vật phẩm');
+  renderBoard();
+ };
+ let mapScale=1,mapRot=0;
+ window.v52MapZoom=f=>{mapScale=Math.max(.75,Math.min(1.8,mapScale*f));applyMap();};
+ window.v52MapRotate=()=>{mapRot=(mapRot+15)%360;applyMap();};
+ window.v52MapReset=()=>{mapScale=1;mapRot=0;applyMap();say('v52-map-status','Đã đặt lại góc nhìn bản đồ.');};
+ function applyMap(){const g=document.querySelector('#v52-map .v52-mapgrid');const m=document.querySelector('#v52-map .v52-mountain');if(g)g.style.transform=`rotateX(57deg) rotateZ(${-13+mapRot}deg) scale(${1.2*mapScale})`;if(m)m.style.transform=`scale(${mapScale}) rotateZ(${mapRot/4}deg)`;}
+ window.v52MapPoint=t=>say('v52-map-status',t);
+ function renderBoard(){
+  const board=get('board',[]).sort((a,b)=>b.score-a.score).slice(0,10);
+  if($('v52-leaderboard'))$('v52-leaderboard').innerHTML=board.length?board.map((x,i)=>`<tr><td class="v52-rank">${i+1}</td><td>${esc(x.name)}</td><td>${x.score.toLocaleString('vi-VN')}</td></tr>`).join(''):'<tr><td colspan="3">Chưa có dữ liệu xếp hạng.</td></tr>';
+  say('v52-rank-status','Điểm hiện tại: '+get('score',0).toLocaleString('vi-VN')+'. Bảng xếp hạng chỉ lưu trên thiết bị này.');
+ }
+ function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+ window.v52SaveScore=()=>{
+  const name=$('v52-player-name').value.trim();if(!name){say('v52-rank-status','Hãy nhập tên hiển thị.');return;}
+  const b=get('board',[]).filter(x=>x.id!=='local');b.push({id:'local',name,score:get('score',0)});put('board',b);put('playerName',name);renderBoard();say('v52-rank-status','Đã cập nhật điểm cho '+name+'.');
+ };
+ window.v52CreateLocalAccount=()=>{
+  const email=$('v52-email').value.trim(),name=$('v52-display-name').value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!name){say('v52-account-state','Vui lòng nhập email hợp lệ và tên hiển thị.');return;}
+  const profile={email,name,createdAt:new Date().toISOString(),mode:'local-demo'};put('profile',profile);
+  say('v52-account-state','Đã tạo hồ sơ thử nghiệm '+name+'. Đây chưa phải tài khoản trực tuyến và chưa xác minh email.');
+ };
+ window.v52Logout=()=>{localStorage.removeItem(P+'profile');say('v52-account-state','Đã đăng xuất hồ sơ mẫu trên thiết bị này.');};
+ window.v52EventAction=kind=>{
+  const labels={attend:'Tham gia sự kiện',kindness:'Ghi nhận việc thiện',meditate:'Ghi nhận tĩnh tâm'};
+  const pts={attend:5,kindness:10,meditate:8};const score=get('eventScore',0)+pts[kind];put('eventScore',score);
+  const log=get('eventLog',[]);log.unshift({label:labels[kind],at:new Date().toLocaleString('vi-VN')});put('eventLog',log.slice(0,10));
+  say('v52-event-score',score);say('v52-event-log',labels[kind]+' – '+new Date().toLocaleString('vi-VN'));
+  say('v52-event-progress-label','Tiến độ cộng đồng mô phỏng: '+score+' điểm');$('v52-event-progress').style.width=Math.min(100,score/5)+'%';
+  put('score',get('score',0)+pts[kind]);renderBoard();
+ };
+ function exportPayload(){
+  const data={format:'LongHoaUltraSync',version:'5.2',createdAt:new Date().toISOString(),data:{}};
+  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&k.startsWith('longhoa_'))data.data[k]=localStorage.getItem(k);}
+  return data;
+ }
+ function download(data,name){
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ }
+ window.v52ExportSync=()=>{download(exportPayload(),'long-hoa-ultra-sync.json');say('v52-sync-state','Đã xuất gói dữ liệu. Chuyển tệp sang thiết bị khác rồi nhập tại mục này.');};
+ window.v52ImportSync=e=>{
+  const f=e.target.files&&e.target.files[0];if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{const d=JSON.parse(r.result);if(d.format!=='LongHoaUltraSync'||!d.data||typeof d.data!=='object')throw Error('invalid');
+   if(!confirm('Nhập dữ liệu từ tệp này? Các khóa Long Hoa trùng nhau sẽ được ghi đè.'))return;
+   Object.entries(d.data).forEach(([k,v])=>{if(k.startsWith('longhoa_')&&typeof v==='string')localStorage.setItem(k,v);});
+   say('v52-sync-state','Nhập dữ liệu hoàn tất. Tải lại trang để cập nhật toàn bộ giao diện.');
+  }catch(err){say('v52-sync-state','Tệp không hợp lệ hoặc không phải gói đồng bộ Long Hoa.');}};r.readAsText(f);e.target.value='';
+ };
+ const prof=get('profile',null);if(prof){$('v52-email').value=prof.email||'';$('v52-display-name').value=prof.name||'';say('v52-account-state','Có hồ sơ thử nghiệm '+(prof.name||'')+' lưu trên thiết bị.');}
+ $('v52-player-name').value=get('playerName','');
+ say('v52-chest-count','Vật phẩm đã sưu tầm: '+get('bag',[]).length);
+ const bag=get('bag',[]);say('v52-collection',bag.slice(-8).map(x=>x.item+' ['+x.tier+']').join(' • ')||'Chưa có vật phẩm');
+ say('v52-event-score',get('eventScore',0));say('v52-event-progress-label','Tiến độ cộng đồng mô phỏng: '+get('eventScore',0)+' điểm');$('v52-event-progress').style.width=Math.min(100,get('eventScore',0)/5)+'%';
+ renderBoard();
+})();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(()=>{
+ const $=id=>document.getElementById(id), KEY='longhoa_ultra60_';
+ const read=(k,d)=>{try{return JSON.parse(localStorage.getItem(KEY+k))??d}catch{return d}};
+ const write=(k,v)=>localStorage.setItem(KEY+k,JSON.stringify(v));
+ const say=(id,msg)=>{if($(id))$(id).textContent=msg};
+ const rewards=['Hạt Bồ Đề','Hoa Sen Vàng','Ấn Long Hoa','Bảo Châu','Pháp Luân','Hào Quang','Ngọc Tịnh Tâm','Vương Miện Ánh Sáng','Bảo Tháp Long Hoa','Châu Báu Thiên Cung'];
+ let state=read('progress',{xp:0,claimed:[]});
+ const xpPerLevel=100, maxLevel=1000;
+ const level=()=>Math.min(maxLevel,Math.floor(state.xp/xpPerLevel)+1);
+ const unlocked=()=>Math.min(maxLevel,Math.floor(state.xp/xpPerLevel));
+ function rewardName(n){return rewards[(n-1)%rewards.length]+' cấp '+n;}
+ function render(){
+  const lv=level(),inLevel=state.xp%xpPerLevel;
+  say('v60-level-label','Cấp '+lv+' / 1.000');say('v60-xp-label',state.xp.toLocaleString('vi-VN')+' XP');
+  $('v60-xp-bar').style.width=(lv===maxLevel?100:inLevel)+'%';
+  say('v60-reward',lv===maxLevel?'Bạn đã đạt cấp tối đa!':`Cần ${xpPerLevel-inLevel} XP để mở cấp ${lv+1}. Phần thưởng: ${rewardName(lv+1)}.`);
+  const grid=$('v60-level-grid');grid.innerHTML='';
+  for(let n=1;n<=maxLevel;n++){const d=document.createElement('div');d.className='v60-level'+(n<=unlocked()?' unlocked':'')+(n===lv?' current':'');d.textContent=n;d.title='Cấp '+n+(n<=unlocked()?' – đã mở khóa':' – chưa mở khóa');grid.appendChild(d);}
+ }
+ window.v60Earn=kind=>{const add=kind==='daily'?10:25;state.xp=Math.min(maxLevel*xpPerLevel,state.xp+add);write('progress',state);render();say('v60-reward','Bạn nhận '+add+' XP. '+(level()===maxLevel?'Đã đạt cấp tối đa!':'Tiếp tục tích lũy để mở cấp tiếp theo.'));};
+ window.v60Claim=()=>{
+  const lv=unlocked();if(lv<1){say('v60-reward','Bạn cần đạt 100 XP để mở khóa cấp 1.');return;}
+  const claimed=new Set(state.claimed||[]);let newly=[];
+  for(let n=1;n<=lv;n++)if(!claimed.has(n)){claimed.add(n);newly.push(n);}
+  state.claimed=[...claimed];write('progress',state);
+  say('v60-reward',newly.length?'Đã nhận '+newly.length+' phần thưởng: '+newly.slice(0,5).map(rewardName).join(', ')+(newly.length>5?'…':''):'Bạn đã nhận toàn bộ phần thưởng đã mở khóa.');
+ };
+ window.v60ShowRewards=()=>{const rows=[];for(let n=100;n<=1000;n+=100)rows.push('Cấp '+n+': '+rewardName(n));say('v60-reward-list',rows.join(' • '));};
+ let room=read('room',null),messages=read('messages',[]),sbClient=null,channel=null,online=[];
+ const config=read('serverConfig',null);
+ if(config){$('v60-supabase-url').value=config.url||'';$('v60-supabase-key').value=config.key||'';}
+ window.v60SaveServerConfig=()=>{
+  const url=$('v60-supabase-url').value.trim(),key=$('v60-supabase-key').value.trim();
+  if(!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(url)||key.length<20){say('v60-server-status','URL Supabase hoặc anon key chưa hợp lệ.');return;}
+  write('serverConfig',{url:url.replace(/\/$/,''),key});say('v60-server-status','Đã lưu cấu hình trên thiết bị. Đang kết nối…');window.v60ConnectServer();
+ };
+ window.v60ConnectServer=async()=>{
+  const c=read('serverConfig',null);
+  if(!c){say('v60-server-status','Hãy nhập URL và anon/public key trước.');return;}
+  if(!window.supabase||!window.supabase.createClient){say('v60-server-status','Không tải được thư viện Supabase. Kiểm tra Internet rồi tải lại trang.');return;}
+  try{
+   if(channel){await sbClient.removeChannel(channel);channel=null;}
+   sbClient=window.supabase.createClient(c.url,c.key);
+   say('v60-server-status','Đã khởi tạo kết nối Supabase. Hãy tạo hoặc tham gia phòng để vào realtime.');
+   if(room)await connectRoom();
+  }catch(e){say('v60-server-status','Kết nối lỗi: '+(e.message||'không xác định'));}
+ };
+ function renderRoom(){if(room){say('v60-room-current',room.code);say('v60-room-status','Bạn đang ở sảnh '+room.code+' với tên '+room.name+'.');}else{say('v60-room-current','—');say('v60-room-status','Chưa tham gia phòng nào.');}}
+ function renderChat(){const box=$('v60-chat');box.innerHTML='';messages.slice(-40).forEach(m=>{const p=document.createElement('p'),b=document.createElement('strong');b.textContent=m.name+': ';p.append(b,document.createTextNode(m.text));box.appendChild(p);});box.scrollTop=box.scrollHeight;}
+ function renderOnline(){say('v60-online-count',online.length);say('v60-online-list',online.map(x=>x.name).join(', ')||'Chưa có thành viên.');}
+ async function connectRoom(){
+  if(!sbClient||!room)return;
+  try{
+   if(channel)await sbClient.removeChannel(channel);
+   const roomCode=room.code;
+   channel=sbClient.channel('longhoa-room-'+roomCode,{config:{presence:{key:room.name+'-'+Math.random().toString(36).slice(2,7)},broadcast:{self:false}}});
+   channel.on('presence',{event:'sync'},()=>{const state=channel.presenceState();online=Object.values(state).flat().map(x=>({name:x.name||'Khách'}));renderOnline();});
+   channel.on('broadcast',{event:'chat'},({payload})=>{if(!payload||!payload.text)return;messages.push(payload);messages=messages.slice(-100);renderChat();});
+   const status=await new Promise((resolve,reject)=>{
+    channel.subscribe(async st=>{
+     if(st==='SUBSCRIBED'){
+      try{await channel.track({name:room.name,joinedAt:new Date().toISOString()});resolve(st);}catch(e){reject(e);}
+     }else if(st==='CHANNEL_ERROR'||st==='TIMED_OUT')reject(new Error(st));
+    });
+   });
+   say('v60-server-status','Đã kết nối Realtime. Phòng '+roomCode+' đang hoạt động.');
+   say('v60-room-status','Đã tham gia phòng '+roomCode+' qua máy chủ trực tuyến.');
+  }catch(e){say('v60-server-status','Không vào được phòng realtime: '+(e.message||'kiểm tra cấu hình Realtime'));say('v60-room-status','Phòng đã lưu cục bộ; kết nối máy chủ chưa thành công.');}
+ }
+ function codeGen(){return 'LH'+Math.random().toString(36).slice(2,8).toUpperCase();}
+ window.v60CreateRoom=async()=>{const name=$('v60-display').value.trim()||'Khách Long Hoa';room={code:codeGen(),name,createdAt:new Date().toISOString()};write('room',room);messages=[];write('messages',messages);renderRoom();renderChat();if(sbClient)await connectRoom();else say('v60-event-status','Đã tạo mã phòng '+room.code+' cục bộ. Cấu hình Supabase để mời người khác tham gia trực tuyến.');};
+ window.v60JoinRoom=async()=>{const name=$('v60-display').value.trim()||'Khách Long Hoa',code=$('v60-room-code').value.trim().toUpperCase();if(!/^[A-Z0-9-]{4,12}$/.test(code)){say('v60-room-status','Mã phòng cần từ 4–12 ký tự chữ, số hoặc dấu gạch ngang.');return;}room={code,name,joinedAt:new Date().toISOString()};write('room',room);messages=read('messages_'+code,[]);renderRoom();renderChat();if(sbClient)await connectRoom();else say('v60-event-status','Đã mở phòng '+code+' cục bộ. Cấu hình Supabase để kết nối nhiều người thật.');};
+ window.v60SendMessage=async()=>{if(!room){say('v60-chat-status','Hãy tạo hoặc tham gia phòng trước.');return;}const text=$('v60-chat-input').value.trim();if(!text)return;const payload={name:room.name,text,at:new Date().toISOString()};if(channel){const result=await channel.send({type:'broadcast',event:'chat',payload});if(result!=='ok'){say('v60-chat-status','Gửi thất bại. Kiểm tra kết nối máy chủ.');return;}messages.push(payload);say('v60-chat-status','Đã gửi tin nhắn tới thành viên trong phòng.');}else{messages.push(payload);write('messages_'+room.code,messages);say('v60-chat-status','Đã lưu cục bộ. Kết nối máy chủ để chat nhiều người.');}messages=messages.slice(-100);write('messages',messages);$('v60-chat-input').value='';renderChat();};
+ window.v60ClearChat=()=>{if(!confirm('Xóa nhật ký trò chuyện cục bộ trên thiết bị này?'))return;messages=[];write('messages',messages);renderChat();};
+ render();renderRoom();renderChat();window.v60ShowRewards();
+})();
+</script>
+
+
+<script>
+(()=>{
+ const $=id=>document.getElementById(id), KEY='longhoa_v71_rank';
+ const ranks=[
+  {name:'Thiện Tâm',merit:0,blessing:0,desc:'Khởi đầu hành trình hướng thiện.'},
+  {name:'Người Hành Thiện',merit:50,blessing:30,desc:'Tích cực ghi nhận những việc làm tốt.'},
+  {name:'Thiện Giả',merit:120,blessing:100,desc:'Duy trì hoạt động thiện lành và tu dưỡng.'},
+  {name:'Hộ Thiện',merit:250,blessing:220,desc:'Góp sức hỗ trợ hoạt động cộng đồng.'},
+  {name:'Sứ Giả Long Hoa',merit:450,blessing:400,desc:'Đồng hành và lan tỏa tinh thần từ bi.'},
+  {name:'Đại Thiện Nhân',merit:700,blessing:650,desc:'Đạt mốc đóng góp và tu dưỡng cao.'},
+  {name:'Minh Đức',merit:1000,blessing:950,desc:'Bậc danh hiệu cao trong lộ trình mô phỏng.'},
+  {name:'Tôn Quý Long Hoa',merit:1500,blessing:1450,desc:'Danh hiệu cao nhất của hệ thống hiện tại.'}
+ ];
+ let data;try{data=JSON.parse(localStorage.getItem(KEY))||{merit:0,blessing:0,rank:0,history:[]};}catch{data={merit:0,blessing:0,rank:0,history:[]};}
+ const save=()=>localStorage.setItem(KEY,JSON.stringify(data));
+ const say=(id,t)=>{if($(id))$(id).textContent=t;};
+ function eligible(i){return data.merit>=ranks[i].merit&&data.blessing>=ranks[i].blessing;}
+ function render(){
+  say('v71-merit',data.merit.toLocaleString('vi-VN'));say('v71-blessing',data.blessing.toLocaleString('vi-VN'));
+  const next=Math.min(ranks.length-1,data.rank+1),r=ranks[data.rank];
+  $('v71-merit-bar').style.width=Math.min(100,data.merit/Math.max(1,ranks[next].merit)*100)+'%';
+  $('v71-blessing-bar').style.width=Math.min(100,data.blessing/Math.max(1,ranks[next].blessing)*100)+'%';
+  say('v71-current-rank',r.name);say('v71-rank-description',r.desc);
+  if(data.rank===ranks.length-1)say('v71-next-requirement','Bạn đã đạt bậc cao nhất hiện có.');
+  else {const n=ranks[next];say('v71-next-requirement',`Bậc kế tiếp: ${n.name}. Cần Công Đức ${n.merit} (còn ${Math.max(0,n.merit-data.merit)}) và Phước Đức ${n.blessing} (còn ${Math.max(0,n.blessing-data.blessing)}).`);}
+  $('v71-rank-list').innerHTML='';
+  ranks.forEach((x,i)=>{const d=document.createElement('div');d.className='v71-rank-row'+(i===data.rank?' active':'')+(i<data.rank?' unlocked':'');const strong=document.createElement('strong');strong.textContent=(i+1)+'. '+x.name;const p=document.createElement('div');p.className='v71-small';p.textContent='Công Đức: '+x.merit+' • Phước Đức: '+x.blessing+(i<data.rank?' • Đã phong':i===data.rank?' • Hiện tại':' • '+(eligible(i)?'Đủ điều kiện':'Chưa đủ điều kiện'));d.append(strong,p);$('v71-rank-list').appendChild(d);});
+ }
+ window.v71Add=(type,amount)=>{if(type!=='merit'&&type!=='blessing')return;data[type]=Math.min(1000000,data[type]+amount);data.history.push({type,amount,at:new Date().toISOString()});save();render();say('v71-score-status','Đã ghi nhận '+(type==='merit'?'Công Đức':'Phước Đức')+' +'+amount+' điểm trong hồ sơ mô phỏng.');};
+ window.v71ApplyPromotion=()=>{
+  if(data.rank>=ranks.length-1){say('v71-license-status','Bạn đã đạt chức vị cao nhất hiện có.');return;}
+  const next=data.rank+1,r=ranks[next];
+  if(!eligible(next)){say('v71-license-status','Chưa đủ điều kiện. Cần đồng thời đạt Công Đức '+r.merit+' và Phước Đức '+r.blessing+'.');return;}
+  data.rank=next;data.history.push({type:'promotion',rank:r.name,at:new Date().toISOString()});save();render();
+  say('v71-license-status','Đã cấp danh hiệu mô phỏng: '+r.name+'. Chúc mừng bạn!');
+ };
+ render();
+})();
+</script>
+
+
+<style>
+#hd2000{margin:34px auto;padding:26px;max-width:1180px;border:1px solid rgba(221,184,92,.45);border-radius:22px;background:linear-gradient(145deg,rgba(24,18,12,.97),rgba(8,20,19,.97));color:#f7e9c4;box-shadow:0 12px 40px #0006}
+#hd2000 h2,#hd2000 h3{color:#f4d27d}
+#hd2000 .hd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+#hd2000 .hd-card{padding:17px;border:1px solid #b9954b66;border-radius:15px;background:#ffffff09}
+#hd2000 input,#hd2000 select{width:100%;padding:11px;margin:7px 0;border-radius:9px;border:1px solid #b9954b;background:#161b18;color:#fff}
+#hd2000 button{padding:10px 15px;margin:5px 4px 5px 0;border:1px solid #e0bd69;border-radius:9px;background:linear-gradient(120deg,#8d6726,#d5ad55);color:#211807;font-weight:700;cursor:pointer}
+#hd2000 .hd-muted{color:#d4c7a7;font-size:.92em}
+#hd2000 .hd-stat{font-size:1.35rem;color:#ffe39b;font-weight:800;overflow-wrap:anywhere}
+#hd2000 .hd-scroll{max-height:360px;overflow:auto;border:1px solid #b9954b55;border-radius:10px}
+#hd2000 table{width:100%;border-collapse:collapse;font-size:.9rem}
+#hd2000 th,#hd2000 td{padding:9px;text-align:left;border-bottom:1px solid #ffffff18}
+#hd2000 th{position:sticky;top:0;background:#282217;color:#f4d27d}
+#hd2000 .hd-progress{height:10px;background:#ffffff20;border-radius:20px;overflow:hidden}
+#hd2000 .hd-progress span{display:block;height:100%;background:linear-gradient(90deg,#9a702c,#ffe49a);width:0}
+@media(max-width:600px){#hd2000{padding:15px;margin:20px 10px}}
+</style>
+<section id="hd2000">
+  <div style="text-align:center">
+    <p class="hd-muted">HỆ THỐNG DANH VỊ THIỆN ĐỨC • BẢN MỞ RỘNG</p>
+    <h2>🌟 2.000 Chức Vị Hiền Đức – Công Đức & Phước Đức</h2>
+    <p class="hd-muted">Thang điểm mô phỏng từ 0 đến 9.000.000.000.000 cho từng loại điểm. Mỗi bậc có danh vị, sức mạnh biểu tượng và phép thuật riêng.</p>
+  </div>
+  <div class="hd-grid">
+    <div class="hd-card"><div class="hd-muted">Công đức</div><div class="hd-stat" id="hdMerit">0</div></div>
+    <div class="hd-card"><div class="hd-muted">Phước đức</div><div class="hd-stat" id="hdBless">0</div></div>
+    <div class="hd-card"><div class="hd-muted">Chức vị hiện tại</div><div class="hd-stat" id="hdRankName">Hiền Tâm Khởi Đầu</div><div class="hd-muted" id="hdRankNo">Cấp 1 / 2.000</div></div>
+    <div class="hd-card"><div class="hd-muted">Sức mạnh & phép biểu tượng</div><div class="hd-stat" id="hdPower">Ánh Sáng Từ Tâm</div><div class="hd-muted" id="hdSpell">Phép: Tịnh Tâm</div></div>
+  </div>
+  <div class="hd-card" style="margin-top:14px">
+    <h3>📈 Tiến trình đến cấp kế tiếp</h3>
+    <div class="hd-progress"><span id="hdProgress"></span></div>
+    <p class="hd-muted" id="hdNext">Cấp kế tiếp: 2</p>
+    <p class="hd-muted">Để đạt chức vị, cả Công đức và Phước đức đều phải đạt ngưỡng của cấp đó.</p>
+  </div>
+  <div class="hd-grid" style="margin-top:14px">
+    <div class="hd-card">
+      <h3>✨ Cập nhật điểm mô phỏng</h3>
+      <label for="hdMeritAdd">Cộng công đức</label><input id="hdMeritAdd" type="number" min="0" max="9000000000000" step="1" value="100">
+      <button type="button" onclick="HD2000.add('merit')">+ Công đức</button>
+      <label for="hdBlessAdd">Cộng phước đức</label><input id="hdBlessAdd" type="number" min="0" max="9000000000000" step="1" value="100">
+      <button type="button" onclick="HD2000.add('bless')">+ Phước đức</button>
+      <p class="hd-muted">Điểm chỉ lưu trên thiết bị/trình duyệt hiện tại.</p>
+    </div>
+    <div class="hd-card">
+      <h3>🎖️ Danh vị & ân thưởng</h3>
+      <div id="hdReward">Bạn đang ở cấp khởi đầu. Hãy tiếp tục tích lũy điểm thiện lành.</div>
+      <button type="button" onclick="HD2000.claim()">Nhận chức vị cao nhất đủ điều kiện</button>
+      <button type="button" onclick="HD2000.reset()">Đặt lại điểm mô phỏng</button>
+    </div>
+  </div>
+  <div class="hd-card" style="margin-top:14px">
+    <h3>📜 Tra cứu 2.000 chức vị</h3>
+    <input id="hdSearch" type="search" placeholder="Tìm theo tên chức vị, cấp độ, sức mạnh hoặc phép..." oninput="HD2000.renderList()">
+    <div class="hd-scroll"><table><thead><tr><th>Cấp</th><th>Chức vị</th><th>Ngưỡng mỗi loại điểm</th><th>Sức mạnh biểu tượng</th><th>Phép biểu tượng</th></tr></thead><tbody id="hdRankRows"></tbody></table></div>
+    <p class="hd-muted">Danh sách được tạo tự động với 2.000 tên chức vị riêng biệt.</p>
+  </div>
+  <p class="hd-muted" style="margin-top:18px;text-align:center">Lưu ý: Đây là hệ thống điểm, danh vị và năng lực hư cấu trong website để trải nghiệm trò chơi; không phải sự xác nhận công đức thực tế, quyền năng siêu nhiên hay thẩm quyền tôn giáo.</p>
+</section>
+<script>
+(function(){
+ const MAX=9000000000000, TOTAL=2000, KEY='longhoa_hd2000_v1';
+ const starts=['Hiền Tâm','Thiện Tâm','Từ Bi','Trí Tuệ','Thanh Tịnh','An Lạc','Quang Minh','Chân Thiện','Bồ Đề','Tịnh Đức','Đại Bi','Đại Trí','Pháp Quang','Liên Hoa','Kim Quang','Diệu Đức','Hộ Pháp','Long Hoa','Cát Tường','Vô Ưu','Minh Tâm','Chánh Niệm','Tâm Quang','Thiện Nguyện','Phúc Huệ','Đạo Tâm','Từ Quang','Tuệ Giác','An Nhiên','Diệu Tâm','Hỷ Xả','Thanh Liên','Bảo Đức','Chân Như','Pháp Hỷ','Viên Mãn','Thánh Thiện','Tôn Quý','Vô Lượng','Đại Hạnh'];
+ const ends=['Khởi Đầu','Học Giả','Tu Sĩ','Hành Giả','Thiện Nhân','Hộ Giả','Sứ Giả','Minh Giả','Đạo Sư','Pháp Sư','Đại Sĩ','Tôn Giả','Hiền Sư','Quang Sứ','Liên Sứ','Bảo Sứ','Thiện Hộ','Phúc Hộ','Trí Hộ','Đức Hộ','Chân Nhân','Diệu Nhân','Pháp Chủ','Đức Chủ','Tâm Chủ','Đại Nhân','Thượng Nhân','Tôn Sư','Đại Đức','Viên Đức','Kim Đức','Diệu Đức','Long Sứ','Long Vệ','Long Tướng','Long Quân','Long Vương','Pháp Vương','Quang Vương','Tối Thượng','Vô Thượng','Đại Tôn','Chí Tôn','Tôn Thượng','Đại Viên Mãn','Cực Quang','Vô Lượng Quang','Bất Tư Nghị','Liên Hoa Tôn','Long Hoa Tôn'];
+ const powers=['Ánh Sáng Từ Tâm','Lá Chắn An Lành','Hào Quang Thiện Ý','Tâm Lực Kiên Định','Trí Tuệ Minh Quang','Kết Giới Từ Bi','Long Hoa Hộ Thể','Kim Liên Bảo Hộ','Vô Lượng Quang Minh','Đại Bi Tâm Lực'];
+ const spells=['Tịnh Tâm','An Lạc','Hộ Niệm','Minh Tuệ','Liên Hoa Quang','Thiện Duyên','Bảo Hộ','Từ Bi Vũ','Long Hoa Quang','Vô Ưu'];
+ const ranks=Array.from({length:TOTAL},(_,i)=>({level:i+1,name:i===0?'Hiền Tâm Khởi Đầu':starts[Math.floor((i-1)/50)%starts.length]+' '+ends[(i-1)%50],threshold:Math.floor(i*MAX/(TOTAL-1)),power:powers[Math.min(9,Math.floor(i/200))],spell:spells[Math.min(9,Math.floor(i/200))]}));
+ let data={merit:0,bless:0,claimed:1};
+ try{data={...data,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){}
+ const fmt=n=>Math.floor(Number(n)||0).toLocaleString('en-US');
+ const el=id=>document.getElementById(id);
+ function current(){let level=1;for(let i=1;i<ranks.length;i++){if(data.merit>=ranks[i].threshold&&data.bless>=ranks[i].threshold)level=i+1;else break;}return ranks[level-1];}
+ function save(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){} render();}
+ function render(){
+  const r=current(), next=ranks[Math.min(r.level,TOTAL-1)];
+  el('hdMerit').textContent=fmt(data.merit);el('hdBless').textContent=fmt(data.bless);
+  el('hdRankName').textContent=r.name;el('hdRankNo').textContent='Cấp '+fmt(r.level)+' / 2.000';
+  el('hdPower').textContent=r.power;el('hdSpell').textContent='Phép: '+r.spell;
+  const p=next?Math.min(100,Math.min(data.merit,next.threshold)/Math.max(1,next.threshold)*100,Math.min(data.bless,next.threshold)/Math.max(1,next.threshold)*100):100;
+  el('hdProgress').style.width=p+'%';
+  el('hdNext').textContent=next?'Cấp kế tiếp '+next.level+' – cần '+fmt(next.threshold)+' công đức và '+fmt(next.threshold)+' phước đức':'Đã đạt cấp tối đa 2.000';
+  el('hdReward').textContent='Danh vị: '+r.name+'. Sức mạnh: '+r.power+'. Phép: '+r.spell+'.';
+ }
+ function add(type){let input=el(type==='merit'?'hdMeritAdd':'hdBlessAdd'),v=Math.max(0,Math.floor(Number(input.value)||0));data[type]=Math.min(MAX,(Number(data[type])||0)+v);save();}
+ function claim(){let r=current();data.claimed=Math.max(data.claimed||1,r.level);save();alert('Đã ghi nhận chức vị mô phỏng: '+r.name+' (cấp '+r.level+').');}
+ function reset(){if(!confirm('Đặt lại toàn bộ công đức và phước đức mô phỏng?'))return;data={merit:0,bless:0,claimed:1};save();}
+ function renderList(){let q=(el('hdSearch').value||'').toLowerCase().trim();let found=ranks.filter(r=>(r.name+' '+r.level+' '+r.power+' '+r.spell+' '+fmt(r.threshold)).toLowerCase().includes(q));el('hdRankRows').innerHTML=found.slice(0,200).map(r=>'<tr><td>'+r.level.toLocaleString('en-US')+'</td><td>'+r.name+'</td><td>'+fmt(r.threshold)+'</td><td>'+r.power+'</td><td>'+r.spell+'</td></tr>').join('')||'<tr><td colspan="5">Không tìm thấy chức vị phù hợp.</td></tr>';}
+ window.HD2000={add,claim,reset,renderList};render();renderList();
+})();
+</script>
+
 </body>
 </html>
